@@ -22,9 +22,9 @@ LOGS.info("Starting...")
 
 
 try:
-    cbot = TelegramClient("bot", APP_ID, API_HASH).start(bot_token=BOT_TOKEN)
+    cbot = TelegramClient("bot", 21861726, "65788fbdf3e1bbfaa758dc5d5759b1a4").start(bot_token="7571822018:AAGQuvgYtxqMY3LDXtBTiYjPr-LqYygIC5A")
 except Exception as e:
-    LOGS.info("Environment vars are missing! Kindly recheck.")
+    LOGS.info("vars are missing! Kindly recheck.")
     LOGS.info("Bot is quiting...")
     LOGS.info(str(e))
     exit()
