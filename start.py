@@ -21,8 +21,12 @@ LOGS.info("Starting...")
 ######## Connect ########
 
 
+API_ID = 21861726
+API_HASH = "65788fbdf3e1bbfaa758dc5d5759b1a4"
+BOT_TOKEN = "7571822018:AAGQuvgYtxqMY3LDXtBTiYjPr-LqYygIC5A"
+
 try:
-    cbot = TelegramClient("bot", 21861726, "65788fbdf3e1bbfaa758dc5d5759b1a4").start(bot_token="7571822018:AAGQuvgYtxqMY3LDXtBTiYjPr-LqYygIC5A")
+    cbot = TelegramClient("bot", api_id=API_ID, api_hash=API_HASH).start(bot_token=BOT_TOKEN)
 except Exception as e:
     LOGS.info("vars are missing! Kindly recheck.")
     LOGS.info("Bot is quiting...")
